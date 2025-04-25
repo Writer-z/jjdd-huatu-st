@@ -1,0 +1,186 @@
+/* 记事本容器样式 */
+.notepad-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0px 0;
+  width: 100%;
+}
+
+/* 记事本头部控制区域 */
+.notepad-header-controls {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+/* 添加记事本按钮 */
+.notepad-add-button {
+  padding: 8px 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.notepad-add-button:hover {
+  background-color: #357abd;
+}
+
+/* 记事本条目样式 */
+.notepad-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0px;
+  margin-bottom: 8px;
+  border: 1px solid #084fd5;
+  border-radius: 8px;
+  background-color: #e6ecda;
+}
+
+.entry-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.entry-number {
+  min-width: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #666;
+  font-size: 13px;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.entry-actions button,
+.add-to-prompt,
+.add-to-model,
+.add-to-lora,
+.delete-notepad {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #4a90e2;
+  background: none;
+  color: #4a90e2;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.entry-actions button:hover,
+.add-to-prompt:hover,
+.add-to-model:hover,
+.add-to-lora:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.delete-notepad {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+}
+
+.delete-notepad:hover {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.notepad-category-input {
+  flex: 1;
+  padding: 2px 6px;
+  height: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.entry-content {
+  display: flex;
+  gap: 5px;
+}
+
+.notepad-numeric-input,
+.notepad-trigger-input {
+  padding: 4px 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 28px;
+}
+
+.notepad-numeric-input {
+  flex: 1;
+}
+
+.notepad-trigger-input {
+  flex: 1;
+}
+
+/* 错误提示 */
+.notepad-error {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #ff4d4f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.error-close {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* 空记事本提示 */
+.empty-message {
+  text-align: center;
+  color: #8c8c8c;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .entry-header {
+    flex-wrap: wrap;
+  }
+  
+  .entry-content {
+    flex-direction: column;
+  }
+}
+
+/* ID选择器样式 */
+#notepad-entries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 0px;
+  max-height: 2100px;
+  overflow-y: auto;
+} 

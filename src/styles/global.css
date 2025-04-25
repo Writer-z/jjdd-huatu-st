@@ -1,0 +1,116 @@
+/* 输入错误消息样式 */
+.input-error-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  font-size: 14px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.input-error-message.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Toast容器和通知样式 */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+  z-index: 9999;
+}
+
+.toast {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(20px);
+  transition: transform 0.3s, opacity 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast-success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.toast-error {
+  background-color: #f44336;
+  color: white;
+}
+
+.toast-warning {
+  background-color: #ff9800;
+  color: white;
+}
+
+.toast-info {
+  background-color: #2196f3;
+  color: white;
+}
+
+.toast-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.toast-message {
+  font-size: 14px;
+}
+
+/* Lora管理组件样式 */
+.lora-manager {
+  margin-bottom: 20px;
+}
+
+.lora-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.lora-entry input {
+  margin-right: 10px;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.lora-entry input.error {
+  border-color: #f44336;
+}
+
+.lora-entry button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.lora-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+} 

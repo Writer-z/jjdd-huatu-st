@@ -1,0 +1,12 @@
+{
+    "display_name": "JJDD画图",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "dist/index.js",
+    "css": "dist/styles.css",
+    "author": "Writer-z",
+    "version": "1.0.0",
+    "homePage": "https://github.com/Writer-z/jjdd-huatu-st",
+    "auto_update": true
+}

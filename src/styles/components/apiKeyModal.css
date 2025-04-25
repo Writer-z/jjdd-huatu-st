@@ -1,0 +1,126 @@
+/**
+ * API密钥模态框样式
+ */
+
+.modal.api-key-modal {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #e6ecda;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-header h4 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.001rem;
+  font-weight: 600;
+}
+
+.close-modal-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-modal-btn:hover {
+  background-color: #ff7875;
+}
+
+.modal-body {
+  padding: 15px;
+}
+
+.api-key-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1.6px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.api-key-input:focus {
+  outline: none;
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.api-key-input.input-error {
+  border-color: #ff4d4f;
+}
+
+.error-message {
+  color: #ff4d4f;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background-color: #e6ecda;
+}
+
+.modal-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.save-btn {
+  background-color: #52c41a;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #73d13d;
+}
+
+.test-btn {
+  background-color: #1890ff;
+  color: white;
+}
+
+.test-btn:hover {
+  background-color: #40a9ff;
+}
+
+.remove-btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #ff7875;
+}
+
+.modal-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 

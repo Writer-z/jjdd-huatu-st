@@ -1,0 +1,21 @@
+.prompt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.auto-fill-toggle {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  color: var(--SmartThemeBodyColor);
+}
+
+.auto-fill-toggle input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.auto-fill-toggle label {
+  cursor: pointer;
+}

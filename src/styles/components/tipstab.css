@@ -1,0 +1,16 @@
+/**
+ * TipsTab组件样式
+ */
+
+.api-key-status.success .status-line {
+  color: #28a745;
+  font-weight: 500;
+  padding: 8px 0;
+  font-size: 1.1em;
+}
+
+.api-key-status.warning {
+  color: #ff0707;
+  font-weight: 500;
+  padding: 8px 0;
+} 
